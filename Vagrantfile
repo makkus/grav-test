@@ -56,10 +56,6 @@ Vagrant.configure("2") do |config|
   # argument is a set of non-required options.
   #config.vm.synced_folder ".", "/vagrant", id: "vagrant", type: "nfs", nfs: true, nfs_version: 4, nfs_udp: false
   config.vm.synced_folder ".", "/vagrant", id: "vagrant"
-  config.vm.synced_folder "/home/markus/projects/nsbl/", "/nsbl", id: "nsbl"
-  config.vm.synced_folder "/home/markus/projects/freckles/", "/freckles", id: "freckles"
-  config.vm.synced_folder "/home/markus/projects/inaugurate/", "/inaugurate", id: "inaugurate"
-  config.vm.synced_folder "/home/markus/projects/frkl", "/frkl", id: "frkl"
 
   #config.bindfs.bind_folder "/vagrant/delivery", "/home/vagrant/sites/delivery"
 
